@@ -14,8 +14,15 @@ public class GreetingAction extends ActionSupport{
 	}
 	
 	@Override
-	public String execute() {
+	public void validate() {
 		if (this.name.trim().isEmpty()) {
+			addFieldError("name", "Name must be not empty!");
+		}
+	}
+	
+	@Override
+	public String execute() {
+		if (hasFieldErrors()) {
 			return INPUT;
 		}
 		

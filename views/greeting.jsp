@@ -9,5 +9,7 @@
 </head>
 <body>
 	<h1 align="center"><%= getInitParameter("greeting") %> <s:property value="name"/> </h1>
+	Version: <s:property value="%{#session.version}" /> <br>	<!-- is same as <s:property value="#session['version']" /> -->
+	
 </body>
 </html>
