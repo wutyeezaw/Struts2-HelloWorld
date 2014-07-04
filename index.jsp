@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%ddsdsds%>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title> <s:property value="#application['title']"/> </title> <!-- same with <%= application.getInitParameter("title") %> -->
 </head>
